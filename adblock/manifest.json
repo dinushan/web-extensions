@@ -1,0 +1,13 @@
+{
+    "name": "dyi-adblocker",
+    "version": "5.0",
+    "description": "A simple adblocker",
+    "permissions": ["webRequest", "webRequestBlocking", "http://*/", "https://*/"],
+    "background": {
+      "scripts": ["blocked_domains.js", "background.js"]
+    },
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "popup.html"
+      }
+  }
